@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+
+<head>
+	<meta charset="utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Quanto dinheiro os empresários de ônibus de Belo Horizonte já ganharam em 2017?">
+
+	<title>Tarifa Zero - Tarifômetro do Busão</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="countUp.min.js"></script> 
+	<script src="moment.min.js"></script>
+</head>
+
+<body>
+	<div class="cabecalho">
+		<div class="titulo">Tarifômetro do Busão</div>
+		<div class="subtitulo">Quanto dinheiro os empresários de ônibus de Belo Horizonte já ganharam em 2017?</div>
+	</div>
+
+	<div class="tarifometro">
+		R$&nbsp;<span id="contador"></span>
+	</div>
+	<div class="images">
+		<img src="./img/money-bag.png" class="pulse"></img>
+		<img src="./img/money-fly.png" class="pulse"></img>	
+	</div>
+
+	<div class="rodape">
+		<img src="./img/logo-tz.png"></img>
+	</div>
+</body>
+
+<script>
+	var now = moment();
+	var yearBegin = moment().startOf('year');
+	var yearEnd = moment().endOf('year');
+	
+	var secondsToYearEnd = yearEnd.diff(now, 'seconds');
+	var secondsSinceYearBegin = now.diff(yearBegin, 'seconds');
+	var secondsYearTotal = yearEnd.diff(yearBegin, 'seconds');
+
+	var daysSinceYearBegin = now.diff(yearBegin, 'days');
+
+	var busRevenueTotal = 1123832390.50;
+
+	var busRevenueToNow = (busRevenueTotal * secondsSinceYearBegin) / secondsYearTotal; 
+
+	var options = {
+		useEasing: false,
+		useGrouping: true,
+		separator: '.',
+		decimal: ',',
+	};
+
+	var demo = new CountUp('contador', busRevenueToNow, busRevenueTotal, 2, secondsToYearEnd, options);
+	if (!demo.error) {
+		demo.start();
+	} else {
+		console.error(demo.error);
+	}
+</script>
+</html>
