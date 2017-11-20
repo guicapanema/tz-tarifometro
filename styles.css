@@ -78,7 +78,7 @@ body {
 	line-height: 1.5em;
 }
 
-.conteudo .botao {
+.conteudo button {
 	background-color: rgb(255, 241, 49);
 	border: 3px solid rgb(224,0,107);
 	border-radius: 5px;
@@ -87,14 +87,16 @@ body {
 	font-family: 'din_mediumregular';
 	text-decoration: none;
 	color: rgb(224,0,107);
+	white-space:nowrap;
 }
 
 @media (min-width: 768px) {
-.conteudo .botao:hover {
-	background-color: transparent;
-	border: 3px solid rgb(255, 241, 49);
-	color: rgb(255, 241, 49);
-}
+	.conteudo button:hover {
+		background-color: transparent;
+		border: 3px solid rgb(255, 241, 49);
+		color: rgb(255, 241, 49);
+		cursor: pointer;
+	}
 }
 
 .highlight {
