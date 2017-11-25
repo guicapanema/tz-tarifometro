@@ -1,37 +1,541 @@
-<!DOCTYPE html>
-<html lang="pt-br"> 
+<!doctype html>
+
+<html lang="pt-BR">
 
 <head>
-	<meta charset="utf-8">	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Quanto dinheiro os empresários de ônibus de Belo Horizonte já ganharam em 2017?">
+  <meta charset="utf-8">
+  <title>Tarifa Zero BH - Auditoria do Busão</title>
+  <meta name="description" content="Explicações sobre a auditoria do busão.">
 
-	<title>Tarifa Zero - Tarifômetro do Busão</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<script src="countUp.min.js"></script> 
-	<script src="moment.min.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./landing.css?c928103b76">
+  <script src="./js/uglipop.min.js" type="text/javascript"></script>
+	<script src="./js/countUp.min.js"></script> 
+	<script src="./js/moment.min.js"></script>
+
+  <!-- <link rel="shortcut icon" href="https://wildbit.com/images/favicon.ico?20150716"> -->
+  <!-- <link rel="apple-touch-icon-precomposed" href="https://wildbit.com/images/apple-touch-icon-precomposed.png?20150716"> -->
+  <!-- <link rel="home" href="https://wildbit.com/"> -->
+
+  <meta property="og:site_name" content="Tarifa Zero BH - Auditoria do Busão">
+  <!-- <meta property="og:image" content="https://wildbit.com/images/apple-touch-icon-precomposed.png?20150716"> -->
+  <meta property="og:title" content="Tarifa Zero BH - Auditoria do Busão">
+  <meta property="og:description" content="Explicações sobre a auditoria do busão.">
+  <meta property="og:type" content="website">
+  <!-- <meta property="og:url" content="https://wildbit.com/"> -->
+  <!-- <link rel="canonical" href="https://wildbit.com/"> -->
 </head>
 
 <body>
-	<div class="cabecalho">
-		<div class="titulo">Tarifômetro do Busão</div>
-		<div class="subtitulo">Quanto dinheiro os empresários de ônibus de Belo Horizonte já ganharam em 2017?</div>
-	</div>
 
-	<div class="tarifometro">
-		R$&nbsp;<span id="contador"></span>
+<header>
+	<div class="head u-container">
+  <a href="index.html" class="wildbit-logo wildbit-logo--head"><img src="img/id.svg" alt="Logo TZ" title="Tarifa Zero"></a>
 	</div>
-	<div class="saiba-mais"><a href="dados.html">(saiba mais)</a></div>
-	<div class="images">
-		<img src="./img/money-bag.png" class="pulse"></img>
-		<img src="./img/money-fly.png" class="pulse"></img>	
-	</div>
+<!--   <nav class="nav-global">
+    <ul class="nav-global_list">
+      <li class="nav-global_item"><a href="https://wildbit.com/" class="nav-global_link is-current">Home</a></li>
+      <li class="nav-global_item"><a href="https://wildbit.com/blog" class="nav-global_link">Blog</a></li>
+      <li class="nav-global_item"><a href="https://wildbit.com/good-bad" class="nav-global_link">Good / Bad</a></li>
+      <li class="nav-global_item"><a href="https://wildbit.com/jobs" class="nav-global_link">Jobs</a></li>
+    </ul>
+  </nav> -->
+</header>
 
-	<div class="rodape">
-		<img src="./img/logo-tz.png"></img>
-	</div>
+<section class="intro">
+
+  <h1 class="titulo">
+	  <span class="titulo_1">Tarifômetro do Busão</span>
+	  <span class="titulo_2">Saiba quanto já pagamos de passagem em BH desde o início do ano, sem sabermos pra onde vai nosso dinheiro</span>
+	  <div class="tarifometro"><div class="tarifometro-numero">R$<span id="contador"></span></div></div>
+	  	<div class="tarifometro-img">
+			<img src="./img/money-bag.png" class="pulse"></img>
+		</div>
+  </h1>
+
+</section>
+
+
+<section class="products u-container">
+  <div class="section-line section-line--1">1</div>
+
+  <div class="u-container u-container--narrow">
+    <h1 class="h-alpha">O que é a <span class="highlight">auditoria?</span></h1>
+    <p>Curabitur commodo enim in ante auctor ultrices. Pellentesque orci elit, scelerisque ut lectus at, rhoncus elementum metus. Mauris dui ligula, cursus vitae fringilla non, varius ac nunc</p>
+<p>Mauris eget tortor ipsum. Nulla in hendrerit massa.</p>
+  </div>
+
+  <ul class="products_list">
+    <li class="products_item">
+      <a href="" class="products_link products_link--bs">
+        <strong class="product-logo product-logo--bs">Edital</strong>
+        <span class="product-tagline">Veja a minuta do edital</span>
+      </a>
+    </li>
+    <li class="products_item">
+      <a href="" class="products_link products_link--db">
+        <span class="product-logo product-logo--db-sign"></span>
+        <span class="deploybot-group">
+          <strong class="product-logo product-logo--db-text">Sugestões TZ</strong>
+          <span class="product-tagline">Veja as sugestões do TZ</span>
+        </span>
+      </a>
+    </li>
+    <li class="products_item">
+      <a href="" class="products_link products_link--pm">
+        <strong class="product-logo product-logo--pm">Sugestões Populares</strong>
+        <span class="product-tagline">Veja as sugestões da população</span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+
+
+    
+                                                                                                                                                                                                                                                                      
+  <section class="stats">
+    <div class="u-container">
+      <div class="u-grid u-grid--full u-grid--fit-at-large u-grid--h-gutters-medium u-grid--center">
+		  <h1 class="u-grid-cell h-beta stats_title highlight"><span class="stats_highlight">O que </span>auditar?</h1>
+
+        <div class="u-grid-cell u-grid u-grid--full u-grid--1of3-at-medium u-grid--bottom">
+          <div class="u-grid-cell stats_item">
+            <strong class="stats_num stats_num--years">10</strong>
+            <span class="stats_line">anos</span> <span class="stats_line">para auditar</span>
+          </div>
+          <div class="u-grid-cell stats_item stats_item_white">
+            <strong class="stats_num stats_num--customers">5</strong>
+            <span class="stats_line">consórcios</span> <span class="stats_line">para verificar</span>
+          </div>
+          <div class="u-grid-cell stats_item stats_item_yellow">
+            <strong class="stats_num stats_num--members">500<span class="stats_plus">+</span></strong>
+            <span class="stats_line">ônibus</span> <span class="stats_line">na frota</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="rules">
+    <div class="section-line section-line--3">2</div>
+
+    <div class="u-container u-container--narrow">
+      <h1 class="h-alpha h-alpha--yellow"><span class="highlight">A proposta da Prefeitura</span> não é auditoria, é Kaô</h1>
+    </div>
+
+    <div class="u-container">
+      <div class="rules-wrap">
+
+                              
+        <div class="rule">
+          <div class="rule_photo">
+            <img src="img/pp.jpg" alt="PP">
+          </div>
+          <div class="rule_box" onclick="participacao()">
+			  <h2 class="rule_number"><img src="./img/icones/caveira.png"></img></h2>
+            <div class="rule_text"><p>Usando a mesma metodologia que Lacerda usou na auditoria de mentirinha em 2013</p></div>
+          </div>
+        </div>
+                              
+        <div class="rule">
+          <div class="rule_photo">
+            <img src="img/ey.jpg" alt="EY">
+          </div>
+          <div class="rule_box" onclick="ey()">
+			  <h2 class="rule_number"><img src="./img/icones/macaco.png"></img></h2>
+            <div class="rule_text"><p>Sem acesso público a todos os dados utilizados durante o levantamento</p></div>
+          </div>
+        </div>
+                              
+        <div class="rule">
+          <div class="rule_photo">
+            <img src="img/nf.jpg" alt="NF">
+          </div>
+          <div class="rule_box" onclick="notafiscal()">
+            <h2 class="rule_number"><img src="./img/icones/calendario.png"></img></h2>
+            <div class="rule_text"><p>Levantando apenas dados à partir de 2014 e assinando embaixo da “verificação independente” de faz de conta de 2013</p></div>
+          </div>
+        </div>
+                              
+        <div class="rule">
+          <div class="rule_photo">
+            <img src="img/be.jpg" alt="BE">
+          </div>
+          <div class="rule_box" onclick="bilhetagem()">
+            <h2 class="rule_number"><img src="./img/icones/ey.png"></img></h2>
+            <div class="rule_text"><p>Sem impedimento da Ernest & Young, a empresa contratada pelos empresários de ônibus para garantir o aumento de agosto de 2015</p></div>
+          </div>
+        </div>
+                              
+        <div class="rule">
+          <div class="rule_photo">
+            <img src="img/2008.jpg" alt="2008">
+          </div>
+          <div class="rule_box" onclick="dados2008()">
+            <h2 class="rule_number"><img src="./img/icones/detetive.png"></img></h2>
+            <div class="rule_text"><p>Sem que a auditoria tenha acesso a todas as notas fiscais guardadas nas empresas de ônibus</p></div>
+          </div>
+        </div>
+        
+        <div class="rule">
+          <div class="rule_photo">
+            <img src="img/2008.jpg" alt="2008">
+          </div>
+          <div class="rule_box" onclick="dados2008()">
+            <h2 class="rule_number"><img src="./img/icones/catraca.png"></img></h2>
+			<div class="rule_text"><p>Sem verificação dos sistemas e equipamentos de bilhetagem eletrônica e das catracas utilizados nos ônibus</p></div>
+          </div>
+        </div>
+
+<!--         <div class="rule">
+          <div class="rule_photo">
+            <img src="https://wildbit.com/assets/home/_362xAUTO_crop_center-center_70/9028549640_d27160a526_o.jpg" srcset="https://wildbit.com/assets/home/_724xAUTO_crop_center-center_30/9028549640_d27160a526_o.jpg 2x" alt="9028549640 D27160A526 O">
+          </div>
+          <div class="rule_box">
+            <h2 class="rule_number">6</h2>
+            <div class="rule_text"><p>Be respectful, natural and transparent in communication.</p></div>
+          </div>
+        </div>
+                              
+        <div class="rule">
+          <div class="rule_photo">
+            <img src="https://wildbit.com/blog-images/2016/03/_362xAUTO_crop_center-center_70/kids_at_office_2.jpg" srcset="https://wildbit.com/blog-images/2016/03/_724xAUTO_crop_center-center_30/kids_at_office_2.jpg 2x" alt="Kids at Office">
+          </div>
+          <div class="rule_box">
+            <h2 class="rule_number">7</h2>
+            <div class="rule_text"><p>Most things are not urgent. Be patient, stay calm, go home.</p></div>
+          </div>
+        </div>
+                              
+        <div class="rule">
+          <div class="rule_photo">
+            <img src="https://wildbit.com/blog-images/xxx_normal/_362xAUTO_crop_center-center_70/_office-conference-room.jpg" srcset="https://wildbit.com/blog-images/xxx_normal/_724xAUTO_crop_center-center_30/_office-conference-room.jpg 2x" alt=" office-conference-room">
+          </div>
+          <div class="rule_box">
+            <h2 class="rule_number">8</h2>
+            <div class="rule_text"><p>The best work happens in peace and quiet (or when you are not around a computer).</p></div>
+          </div>
+        </div>
+                              
+        <div class="rule">
+          <div class="rule_photo">
+            <img src="https://wildbit.com/assets/home/_362xAUTO_crop_center-center_70/7635667120_bd19e26817_o.jpg" srcset="https://wildbit.com/assets/home/_724xAUTO_crop_center-center_30/7635667120_bd19e26817_o.jpg 2x" alt="7635667120 Bd19E26817 O">
+          </div>
+          <div class="rule_box">
+            <h2 class="rule_number">9</h2>
+            <div class="rule_text"><p>Be practical. The best decisions consider time, resources and mutual acceptance.</p></div>
+          </div>
+        </div>
+                              
+        <div class="rule">
+          <div class="rule_photo">
+            <img src="https://wildbit.com/blog-images/_362xAUTO_crop_center-center_70/ilya.jpg" srcset="https://wildbit.com/blog-images/_724xAUTO_crop_center-center_30/ilya.jpg 2x" alt="Ilya">
+          </div>
+          <div class="rule_box">
+            <h2 class="rule_number">10</h2>
+            <div class="rule_text"><p>Don’t be an asshole.</p></div>
+          </div>
+        </div> -->
+      
+      </div>
+    </div>
+  </section>
+
+
+<!--   <section class="hq">
+    <div class="section-line section-line--4">4</div>
+
+    <div class="u-container u-container--narrow">
+      <h1 class="h-alpha">Wildbit <span class="highlight">HQ</span></h1>
+      <p>This is the&nbsp;place we call home, right in the middle of Old City, in Philadelphia. We think that open offices are only good for babysitting and distraction, which is why each person has their own private, quiet office to work. Our remote team culture has driven the way we designed our physical space, helping encourage asyncronous communication no matter where you are located.</p>
+<p><strong>Location:</strong>&nbsp;225 Chestnut St., Philadelphia, PA, 19106.<br></p>
+    </div>
+
+    <div class="hq-photos">
+      <div class="hq-photos_bg hq-photos_bg--purple"></div>
+      <div class="hq-photos_bg hq-photos_bg--green"></div>
+      <div class="hq-photos_icon"></div>
+
+                  
+      <img src="https://wildbit.com/blog-images/2015/08/_480xAUTO_crop_center-center/office-kitchen.jpg" srcset="https://wildbit.com/blog-images/2015/08/_960xAUTO_crop_center-center_40/office-kitchen.jpg 2x" alt="Kitchen" class="hq-photos_img hq-photos_img--1">
+      <img src="https://wildbit.com/blog-images/2015/08/_503xAUTO_crop_center-center/womb-chair-and-staircase.jpg" srcset="https://wildbit.com/blog-images/2015/08/_1006xAUTO_crop_center-center_40/womb-chair-and-staircase.jpg 2x" alt="Womb chair and staircase" class="hq-photos_img hq-photos_img--2">
+      <img src="https://wildbit.com/blog-images/2015/08/_305xAUTO_crop_center-center/office-4th-floor-lounge.jpg" srcset="https://wildbit.com/blog-images/2015/08/_610xAUTO_crop_center-center_40/office-4th-floor-lounge.jpg 2x" alt="4th floor lounge" class="hq-photos_img hq-photos_img--3">
+    </div>
+
+    <div class="hq-intro">
+      <h2 class="hq-intro_title">From the blog:</h2>
+              <img src="https://wildbit.com/cpresources/userphotos/chris/48/chris.jpg?d=1459288056" srcset="https://wildbit.com/cpresources/userphotos/chris/96/chris.jpg?d=1459286417 2x" class="hq-intro_photo" alt="Chris Nagele" title="Chris Nagele">
+            <a href="https://wildbit.com/blog/2015/08/05/wildbit-office-tour">Wildbit HQ: Ending the open office epidemic</a> by Chris on August 5th, 2015
+    </div>
+  </section> -->
+
+
+  <section class="timeline">
+    <div class="section-line section-line--5">3</div>
+
+    <div class="u-container u-container--narrow">
+      <h1 class="h-alpha"><span class="highlight">Conheça o histórico</span> dos caôs</h1>
+    </div>
+
+    <div class="u-container">
+      <div class="timeline-wrap">
+
+            
+                            <div class="tl-block">
+
+            <div class="tl-block_period">
+              <h2 class="tl-block_year">1980</h2>
+              <!-- <p class="tl-block_context">2000 was the year of the dotcom collapse,  resulting in huge losses for legions of investors.</p> -->
+            </div>
+
+        
+              
+        
+<!--             <div class="tl-block_event">
+              <div class="tl-block_event-wrap">
+                                  <time datetime="2000-10-25" class="tl-block_month">Oct</time>
+                
+                <div class="tl-block_desc"><p>Chris started Wildbit as a web design shop serving clients mostly in Philadelphia.</p></div>
+
+                                  <div class="tl-block_modifier tl-block_modifier--started"></div>
+                              </div>
+            </div> -->
+
+        
+              
+        
+            <div class="tl-block_event">
+              <div class="tl-block_event-wrap">
+                
+                <div class="tl-block_desc"><p>Troca no modelo de gestão da receita do transporte público na cidade. As empresas passaram a controlar o próprio dinheiro.</p></div>
+
+                              </div>
+            </div>
+
+        
+              
+                              </div>
+                    <div class="tl-block">
+
+            <div class="tl-block_period">
+              <h2 class="tl-block_year">2008</h2>
+              <!-- <p class="tl-block_context"></p> -->
+            </div>
+
+        
+              
+        
+            <div class="tl-block_event">
+              <div class="tl-block_event-wrap">
+                
+                <div class="tl-block_desc"><p>Mudança nos termos contratuais das concessões de transporte público em BH, com a adoção do atual modelo de cálculo tarifário.</p></div>
+
+                                  <div class="tl-block_modifier tl-block_modifier--newsberry"></div>
+                              </div>
+            </div>
+
+        
+              
+                              </div>
+                    <div class="tl-block">
+
+            <div class="tl-block_period">
+              <h2 class="tl-block_year">2013</h2>
+              <!-- <p class="tl-block_context">YouTube is founded and comes online February 15, 2005.</p> -->
+            </div>
+
+        
+              
+        
+            <div class="tl-block_event">
+              <div class="tl-block_event-wrap">
+                
+                <div class="tl-block_desc"><p>Brasil experimenta a maior onde de protestos na história recente do país.</p></div>
+
+                              </div>
+            </div>
+
+            <div class="tl-block_event">
+              <div class="tl-block_event-wrap">
+                
+                <div class="tl-block_desc"><p>MOVE entra em operação.</p></div>
+
+                              </div>
+            </div>
+
+            <div class="tl-block_event">
+              <div class="tl-block_event-wrap">
+                
+                <div class="tl-block_desc"><p>Aumento da tarifa por conta do MOVE.</p></div>
+
+                              </div>
+            </div>
+
+            <div class="tl-block_event">
+              <div class="tl-block_event-wrap">
+                
+                <div class="tl-block_desc"><p>Ernst & Young realiza a auditoria do caô.</p></div>
+
+                              </div>
+            </div>
+
+        
+              
+                              </div>
+                    <!-- <div class="tl-block">
+
+            <div class="tl-block_period">
+              <h2 class="tl-block_year">2007</h2>
+              <p class="tl-block_context">Apple introduces the iPhone to the public at the January 9, 2007 Macworld Conference &amp; Expo.</p>
+            </div>
+
+        
+              
+        
+            <div class="tl-block_event">
+              <div class="tl-block_event-wrap">
+                                  <time datetime="2007-02-06" class="tl-block_month">Feb</time>
+                
+                <div class="tl-block_desc"><p><a href="https://wildbit.com/blog/2007/02/06/nuzizocom-limited-invites-available">Client launch of Nuzizo.com</a>, first full scale social network.</p></div>
+
+                              </div>
+            </div>
+
+        
+              
+        
+            <div class="tl-block_event">
+              <div class="tl-block_event-wrap">
+                                  <time datetime="2007-03-12" class="tl-block_month">Mar</time>
+                
+                <div class="tl-block_desc"><p>First <a href="https://wildbit.com/blog/2007/03/12/wildbit-retreat-cyprus">Wildbit retreat</a> in Cyprus.</p></div>
+
+                              </div>
+            </div>
+
+        
+              
+        
+            <div class="tl-block_event">
+              <div class="tl-block_event-wrap">
+                                  <time datetime="2007-05-21" class="tl-block_month">May</time>
+                
+                <div class="tl-block_desc"><p><a href="https://wildbit.com/blog/2007/05/21/podcastpeople">Client launch of Podcast People</a>, a SaaS product for self-publishing podcasts.</p></div>
+
+                              </div>
+            </div>
+
+        
+              
+        
+            <div class="tl-block_event">
+              <div class="tl-block_event-wrap">
+                                  <time datetime="2007-10-09" class="tl-block_month">Oct</time>
+                
+                <div class="tl-block_desc"><p>Product launch of <a href="https://wildbit.com/blog/2007/10/09/beanstalk-is-open-to-the-public">Beanstalk</a>.</p></div>
+
+                                  <div class="tl-block_modifier tl-block_modifier--beanstalk"></div>
+                              </div>
+            </div>
+
+        
+              
+                              </div> -->
+                    <div class="tl-block">
+
+            <div class="tl-block_period">
+              <h2 class="tl-block_year">2017</h2>
+              <!-- <p class="tl-block_context"></p> -->
+            </div>
+
+        
+              
+        
+            <div class="tl-block_event">
+              <div class="tl-block_event-wrap">
+                                  <time datetime="2008-10-05" class="tl-block_month">OUT</time>
+                
+                <div class="tl-block_desc"><p>Kalil é eleito prefeito, prometendo "abrir a caixa preta da BHTrans".</p></div>
+
+                                  <div class="tl-block_modifier tl-block_modifier--turkey"></div>
+                              </div>
+            </div>
+
+        
+        
+              
+                              </div>
+                    
+        
+                  </div>
+              
+      </div>
+
+      <p class="u-text-center"><em>E o caô continua&hellip;</em></p>
+
+    </div>
+  </section>
+
+
+<!-- <footer class="footer">
+  <div class="u-container">
+    <div class="footer-wrap">
+      <a href="https://wildbit.com/" class="wildbit-logo wildbit-logo--footer"><img src="/images/blog/logo-wildbit.png" srcset="/images/blog/logo-wildbit@2x.png 2x" alt="Wildbit logo" title="Wildbit"></a>
+
+      <ul class="u-inline-list u-inline-spacing">
+        <li><a href="https://wildbit.com/blog">Blog</a></li>
+        <li><a href="https://wildbit.com/jobs">Jobs</a></li>
+        <li><a href="http://beanstalkapp.com">Beanstalk</a></li>
+        <li><a href="http://postmarkapp.com">Postmark</a></li>
+        <li><a href="http://deploybot.com">DeployBot</a></li>
+        <li><a href="https://wildbit.com/privacy-policy">Privacy policy</a></li>
+      </ul>
+
+      <p>Copyright &copy; 2017 Wildbit LLC</p>
+    </div>
+  </div>
+</footer> -->
+<script>
+    var rem = function(){
+      document.getElementById('uglipop_overlay_wrapper').style.display = 'none';
+          document.getElementById('uglipop_overlay').style.display = 'none';
+          document.getElementById('uglipop_content_fixed').style.display = 'none';
+    }
+
+  var participacao = function(){
+    uglipop({class:'rule_modal', //styling class for Modal
+            source:'html',
+            content:'<div class="modal_header"><span class="modal_close" onclick="rem();">x</span><span class="nome-candidato">Participação Popular</span></div>'});
+  }
+  var ey = function(){
+    uglipop({class:'rule_modal', //styling class for Modal
+          source:'html',
+          content:'<div class="modal_header"><span class="modal_close" onclick="rem();">x</span><span class="nome-candidato">Impedimento da Ernst & Young</span></div>'});
+  }
+  var notafiscal = function(){
+    uglipop({class:'rule_modal', //styling class for Modal
+          source:'html',
+          content:'<div class="modal_header"><span class="modal_close" onclick="rem();">x</span><span class="nome-candidato">Verificação das notas fiscais</span></div>'});
+  }
+  var bilhetagem = function(){
+    uglipop({class:'rule_modal', //styling class for Modal
+          source:'html',
+          content:'<div class="modal_header"><span class="modal_close" onclick="rem();">x</span><span class="nome-candidato">Verificação do sistema de bilhetagem eletrônica</span></div>'});
+  }
+  var dados2008 = function(){
+    uglipop({class:'rule_modal', //styling class for Modal
+          source:'html',
+          content:'<div class="modal_header"><span class="modal_close" onclick="rem();">x</span><span class="nome-candidato">Verificação dos dados a partir de 2008</span></div>'});
+  }
+
+
+ 
+  </script>
+
 </body>
-
 <script>
 	var now = moment();
 	var yearBegin = moment().startOf('year');
@@ -54,11 +558,13 @@
 		decimal: ',',
 	};
 
-	var demo = new CountUp('contador', busRevenueToNow, busRevenueTotal, 2, secondsToYearEnd, options);
+	var demo = new CountUp('contador', busRevenueToNow, busRevenueTotal, 0, secondsToYearEnd, options);
 	if (!demo.error) {
 		demo.start();
 	} else {
 		console.error(demo.error);
 	}
 </script>
+
+
 </html>
