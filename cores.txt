@@ -1,0 +1,4 @@
+Rosa: d63599
+Amarelo: ffff00
+Azul: 111929
+
