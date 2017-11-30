@@ -1278,12 +1278,9 @@ header {
     flex: 0;
     min-width: 2.5em;
     margin-right: 34px;
-    font: .77em/1.95 Helvetica Neue, Arial, Helvetica, sans-serif;
+    font: .77em/1.95 Mosk, Helvetica Neue, Arial, Helvetica, sans-serif;
     text-align: center;
     text-transform: uppercase
-}
-.fonts-loaded .tl-block_month {
-    font-family: Montserrat, Helvetica Neue, Arial, Helvetica, sans-serif
 }
 .tl-block_desc {
     -ms-flex: 1;
@@ -1346,49 +1343,49 @@ header {
 }
 .tl-block_modifier--tarifa-2008 {
     top: -20px;
-    right: -60px;
+    right: -15px;
     width: 80px;
     height: 80px;
     background-image: url(img/tarifas/tarifa2008.png)
 }
 .tl-block_modifier--tarifa-2013 {
     top: -20px;
-    left: -60px;
+    left: -15px;
     width: 80px;
     height: 80px;
     background-image: url(img/tarifas/tarifa2013.png)
 }
 .tl-block_modifier--tarifa-2014 {
     top: -20px;
-    right: -60px;
+    right: -15px;
     width: 80px;
     height: 80px;
     background-image: url(img/tarifas/tarifa2014.png)
 }
 .tl-block_modifier--tarifa-2015 {
     top: -20px;
-    left: -60px;
+    left: -15px;
     width: 80px;
     height: 80px;
     background-image: url(img/tarifas/tarifa2015.png)
 }
 .tl-block_modifier--tarifa-20152 {
     top: -20px;
-    left: -60px;
+    left: -15px;
     width: 80px;
     height: 80px;
     background-image: url(img/tarifas/tarifa20152.png)
 }
 .tl-block_modifier--tarifa-2016 {
     top: -20px;
-    right: -60px;
+    right: -15px;
     width: 80px;
     height: 80px;
     background-image: url(img/tarifas/tarifa2016.png)
 }
 .tl-block_modifier--tarifa-2017 {
     top: -20px;
-    left: -60px;
+    left: -15px;
     width: 80px;
     height: 80px;
     background-image: url(img/tarifas/tarifa2017.png)
