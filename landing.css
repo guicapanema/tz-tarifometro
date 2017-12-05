@@ -175,6 +175,9 @@ td,
 th {
     padding: 0
 }
+strong {
+	font-weight: 900;
+}
 @font-face {
     font-family: Mosk;
     src: url('./fonts/mosk_ultra-bold_900-webfont.woff2') format('woff2'),
@@ -746,7 +749,6 @@ header {
 	background-color: #ffff00;
 	width: 47vmin;
 	text-align: left;
-	cursor: pointer;
 }
 .tarifometro-numero {
 	transform: rotate(-1deg) skew(5deg);
@@ -755,19 +757,25 @@ header {
 	margin-top: 2em;
 	width: 20vmin;
 }
+.tarifometro-saiba-mais {
+	color: #ffff00;
+	cursor: pointer;
+	text-decoration: underline;
+	font-size: 0.8em;
+}
 @media only screen and (max-width: 754px) {
 	.titulo_1 {
-		font-size: 9vw;
+		font-size: 9vmin;
 	}
 	.titulo_2 {
 		font-size: 0.7em;
 	}
 	.tarifometro {
-		font-size: 10vw;
-		width: 78vw;
+		font-size: 10vmin;
+		width: 78vmin;
 	}
 	.tarifometro-img img {
-		width: 35vw;
+		width: 35vmin;
 	}
 }
 @keyframes pulse_animation {
@@ -788,9 +796,16 @@ header {
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 }
+@media only screen and (max-width: 754px) {
+
+	#como_deve {
+		padding: 0;
+	}
+}
+
 #como_deve img {
 	width: 100%;
-	margin: auto;
+	margin: 1em auto;
 }
 .products_list {
     display: -ms-flexbox;
@@ -851,7 +866,7 @@ header {
     text-decoration: none
 }
 .products_link--bs {
-    background-color: #ffff00;
+    background-color: white;
     color: #111929;
 }
 .products_link--db {
@@ -864,89 +879,10 @@ header {
     background-color: #d63599;
     color: white;
 }
-@media only screen and (min-width: 1146px) {
-    .products_list {
-        position: relative;
-        margin-top: 111px
-    }
-    .products_list:after {
-        content: "";
-        position: absolute;
-        top: -40px;
-        right: 0;
-        left: 0;
-        height: 3px;
-        margin: 0 16.665%;
-        background-color: #615f76
-    }
-    .products_item {
-        position: relative
-    }
-    .products_item:before {
-        content: "";
-        position: absolute;
-        top: -55px;
-        left: 50%;
-        width: 3px;
-        height: 29px;
-        margin-left: -1px;
-        background-color: #615f76
-    }
-    .products_item:nth-child(2):before {
-        top: -81px;
-        height: 55px
-    }
-    .products_item:after {
-        content: "";
-        position: absolute;
-        top: -33px;
-        left: 50%;
-        width: 9px;
-        height: 9px;
-        margin-left: -7px;
-        border: 3px solid #615f76;
-        border-radius: 50%;
-        background-color: #fff
-    }
-}
-/*.product-logo {
-    display: inline-block;
-    overflow: hidden;
-    background: url(/images/landing/products-logos@2x.png?568dbd6235) no-repeat;
-    background-size: 570px 128px;
-    text-indent: -999em
-}
-.product-logo--bs {
-    width: 180px;
-    height: 56px;
-    margin-top: -34px;
-    background-position: 0 0
-}
-.product-logo--pm {
-    width: 184px;
-    height: 29px;
-    margin-top: -8px;
-    margin-bottom: -3px;
-    background-position: -200px 0
-}
-.product-logo--db-sign {
-    width: 94px;
-    height: 95px;
-    margin-right: 15px;
-    background-position: -400px 0
-}
-.product-logo--db-text {
-    width: 170px;
-    height: 23px;
-    background-position: -400px -105px
-}*/
 .product-tagline {
     display: block;
     margin-top: 15px
 }
-/*.deploybot-group {
-    text-align: left
-}*/
 .stats {
     margin: 68px 0 0;
     padding: 30px 0 45px;
@@ -1392,31 +1328,7 @@ header {
 }
 .footer {
     padding: 30px 0;
-    background-color: #615f76;
-    color: #fff;
-    font: normal .7272em/1 Helvetica Neue, Arial, Helvetica, sans-serif
-}
-.fonts-loaded .footer {
-    font-family: Montserrat, Helvetica Neue, Arial, Helvetica, sans-serif
-}
-.footer a {
-    color: #fff
-}
-.footer-wrap {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-align: center;
-    align-items: center
-}
-@media only screen and (min-width: 1146px) {
-    .footer-wrap {
-        -ms-flex-direction: row;
-        flex-direction: row
-    }
+    background-color: #ffff00;
 }
 .white {
 	color: white;
