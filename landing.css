@@ -693,6 +693,7 @@ header {
     background-color: rgb(3,19,38);
     z-index: 1;
 	height: 80vh;
+	min-height: 450px;
 }
 .titulo {
     display: -ms-flexbox;
@@ -763,7 +764,7 @@ header {
 	text-decoration: underline;
 	font-size: 0.8em;
 }
-@media only screen and (max-width: 754px) {
+@media only screen and (max-width: 754px) and (orientation:portrait){
 	.titulo_1 {
 		font-size: 9vmin;
 	}
@@ -1070,7 +1071,18 @@ header {
 	font-size: 0.8em;
     line-height: 1.1em;
 }
-
+.button_group {
+	text-align: center;
+}
+.modal_content button {
+	padding: 1em;
+	background-color: #111929;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	margin: 0.5em;
+	font-weight: 900;
+}
 @media only screen and (min-width: 362px) {
     .rule_box {
         margin-left: -171px
