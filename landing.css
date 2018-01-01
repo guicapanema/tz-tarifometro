@@ -740,15 +740,32 @@ header {
 .tarifometro {
     font-family: Mosk, Helvetica Neue, Arial, Helvetica, sans-serif;
     font-weight: 900;
-	font-size: 6vmin;
+	font-size: 5.3vmin;
 	padding: 0.1em 0.3em 0.2em;
 	margin-top: 10vh;
 	border-radius: 5px;
 	transform: rotate(1deg) skew(-5deg);
 	color: #d63599;
 	background-color: #ffff00;
-	width: 47vmin;
+	width: 41vmin;
 	text-align: left;
+	float: left;
+	margin-right: 0.5em;
+	margin-left: 0.5em;
+}
+#tarifometro-2018 {
+	width: 30vmin;
+}
+.tarifometro-plus {
+	float: left;
+	margin-top: 12vh;
+	font-size: 5.3vmin;
+	color: #ffff00;
+}
+.tarifometro-ano {
+	color: #111929;
+	font-size: 0.5em;
+	text-align: center;
 }
 .tarifometro-numero {
 	transform: rotate(-1deg) skew(5deg);
@@ -771,11 +788,22 @@ header {
 		font-size: 0.7em;
 	}
 	.tarifometro {
-		font-size: 10vmin;
-		width: 78vmin;
+		margin-top: 5vh;
+		font-size: 8vmin;
+		width: 63vmin;
+		float: none;
+	}
+	#tarifometro-2018 {
+		margin: 0 auto !important;
+		width: 46vmin;
+	}
+	.tarifometro-plus {
+		float: none;
+		margin: 0.5em 0;
 	}
 	.tarifometro-img img {
-		width: 35vmin;
+		margin-top: 1em;
+		width: 30vmin;
 	}
 }
 @keyframes pulse_animation {
@@ -1348,4 +1376,3 @@ header {
 #uglipop_overlay_wrapper, #uglipop_content_fixed {
 	z-index: 2;
 }
-

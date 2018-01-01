@@ -42,8 +42,18 @@
 
 			<h1 class="titulo">
 				<span class="titulo_1">Tarifômetro do Busão</span>
-				<span class="titulo_2">Saiba quanto já pagamos de passagem em BH desde o início do ano, sem sabermos pra onde vai nosso dinheiro</span>
-				<div class="tarifometro"><div class="tarifometro-numero">R$<span id="contador"></span></div></div>
+				<span class="titulo_2">Saiba quanto já pagamos de passagem em BH desde o início de 2017, sem sabermos pra onde vai nosso dinheiro</span>
+				<div class="tarifometro-container">
+					<div class="tarifometro" id="tarifometro-2018">
+						<div class="tarifometro-ano">2018</div>
+						<div class="tarifometro-numero">R$<span id="contador"></span></div>
+					</div>
+					<div class="tarifometro-plus">+</div>
+					<div class="tarifometro" id="tarifometro-2017">
+						<div class="tarifometro-ano">2017</div>
+						<div class="tarifometro-numero">R$<span>1.036.944.342</span></div>
+					</div>
+				</div>
 				<div class="tarifometro-img">
 					<img src="./img/money-bag.png" class="pulse"></img>
 				</div>
@@ -101,7 +111,7 @@
 			</div>
 
 			<div class="u-container">
-				<div class="rules-wrap">                      
+				<div class="rules-wrap">
 
 					<div class="rule">
 						<div class="rule_photo">
@@ -400,7 +410,7 @@
 			</div>
 		</footer>
 		<script src="./js/uglipop.min.js" type="text/javascript"></script>
-		<script src="./js/countUp.min.js"></script> 
+		<script src="./js/countUp.min.js"></script>
 		<script src="./js/moment.min.js"></script>
 
 		<script>
@@ -414,9 +424,9 @@ var secondsYearTotal = yearEnd.diff(yearBegin, 'seconds');
 
 var daysSinceYearBegin = now.diff(yearBegin, 'days');
 
-var busRevenueTotal = 1112275658.91;
+var busRevenueTotal = 1036944342.91;
 
-var busRevenueToNow = (busRevenueTotal * secondsSinceYearBegin) / secondsYearTotal; 
+var busRevenueToNow = (busRevenueTotal * secondsSinceYearBegin) / secondsYearTotal;
 
 var options = {
 	useEasing: false,
