@@ -793,9 +793,13 @@ header {
 		width: 63vmin;
 		float: none;
 	}
+	#tarifometro-2017 {
+		margin-top: 0;
+	}
 	#tarifometro-2018 {
-		margin: 0 auto !important;
 		width: 46vmin;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.tarifometro-plus {
 		float: none;
