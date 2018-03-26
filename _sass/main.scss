@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Mosk;
+    src: url('../fonts/mosk_ultra-bold_900-webfont.woff2') format('woff2'),
+         url('../fonts/mosk_ultra-bold_900-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: Mosk;
+    src: url('../fonts/mosk_bold_700-webfont.woff2') format('woff2'),
+         url('../fonts/mosk_bold_700-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: Mosk;
+    src: url('../fonts/mosk_normal_400-webfont.woff2') format('woff2'),
+         url('../fonts/mosk_normal_400-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: Mosk;
+    src: url('../fonts/mosk_light_300-webfont.woff2') format('woff2'),
+         url('../fonts/mosk_light_300-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+// $blue: #06bcef;
+// Add pink and its invert
+// $pink: #ff8080;
+// $pink-invert: #fff;
+// Update the sans-serif font family
+$family-sans-serif: Mosk, "Helvetica", sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: rgb(3,19,38);
+
+
+$column-gap: 0.2rem;
+
+// 4. Import the rest of Bulma
+
+
+@import "../node_modules/bulma/bulma";
+.linha {
+	height: 33vh;
+}
+.tarifometro-titulo {
+	font-size: 6.2vw;
+	font-weight: 900;
+}
+
+div.ano {
+	font-size: 0.4em !important;
+	font-weight: 700;
+}
+
+.tarifometro {
+    font-family: Mosk, Helvetica Neue, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+	font-size: 6.5vw;
+	padding: 0.05em 0.3em 0.15em;
+	border-radius: 5px;
+	transform: rotate(1deg) skew(-5deg);
+	color: #d63599;
+	background-color: #ffff00;
+	width: 100%;
+	text-align: left;
+}
+
+.tarifometro-numero {
+	transform: rotate(-1deg) skew(5deg);
+}
