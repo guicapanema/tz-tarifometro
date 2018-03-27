@@ -740,8 +740,8 @@ header {
 .tarifometro {
     font-family: Mosk, Helvetica Neue, Arial, Helvetica, sans-serif;
     font-weight: 900;
-	font-size: 5.3vmin;
-	padding: 0.1em 0.3em 0.2em;
+	font-size: 6vmin;
+	padding: 0.3em 0.3em 0.4em;
 	margin-top: 10vh;
 	border-radius: 5px;
 	transform: rotate(1deg) skew(-5deg);
@@ -754,7 +754,7 @@ header {
 	margin-left: 0.5em;
 }
 #tarifometro-2018 {
-	width: 37vmin;
+	width: 41vmin;
 }
 .tarifometro-plus {
 	float: left;
