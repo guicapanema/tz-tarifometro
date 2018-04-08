@@ -84,12 +84,163 @@ div.ano {
 	padding: 0.05em 0.3em 0.15em;
 	border-radius: 5px;
 	transform: rotate(1deg) skew(-5deg);
-	color: #d63599;
-	background-color: #ffff00;
+	color: rgb(230,0,126);
+	background-color: rgb(255,237,0);
 	width: 100%;
 	text-align: left;
 }
 
 .tarifometro-numero {
 	transform: rotate(-1deg) skew(5deg);
+}
+
+.tarifometro-rodape {
+	font-size: 5vw;
+	font-weight: 900;
+}
+
+.tarifometro-rodape img {
+	height: 33vh;
+}
+
+.tarifometro-rodape {
+	// background-color: rgb(230,0,126);
+}
+
+/* Animações do rodapé */
+
+.rodape-texto {
+  animation: piscartexto 500ms cubic-bezier(1,0,0,1) infinite;
+  height: 33vh;
+}
+
+
+@keyframes piscartexto {
+	0% { color: rgb(255,237,0); }
+	49% { color: rgb(255,237,0); }
+	50% { color: #ffffff; }
+	99% { color: #ffffff; }
+	100% { color: rgb(255,237,0); }
+}
+
+.rodape-container1 {
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: right;
+	animation: aparecerfundo1 10s linear infinite;
+}
+
+@keyframes aparecerfundo1 {
+  0% { background-color: transparent; }
+  11% { background-color: transparent; }
+  12% { background-color: rgb(230,0,126); }
+  49% { background-color: rgb(230,0,126); }
+  50% { background-color: transparent; }
+  100% { background-color: transparent; }
+}
+
+.rodape-coluna1-texto {
+	margin-left: auto;
+	&:after {
+		content: "";
+		animation: aparecertexto1 10s linear infinite;
+	}
+}
+
+@keyframes aparecertexto1 {
+  0% { content: "";}
+  11% { content: "";}
+  12% { content: "Cadê"; }
+  49% { content: "Cadê"; }
+  50% { content: "tarif"; }
+  99% { content: "tarif"; }
+  100% { content: ""; }
+}
+
+.rodape-container2 {
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	animation: aparecerfundo2 10s linear infinite;
+}
+
+@keyframes aparecerfundo2 {
+  0% { background-color: transparent; }
+  23% { background-color: transparent; }
+  24% { background-color: rgb(230,0,126); }
+  49% { background-color: rgb(230,0,126); }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100% { background-color: transparent; }
+}
+
+.rodape-coluna2-texto {
+	&:after {
+		content: "";
+		animation: aparecertexto2 10s linear infinite;
+	}
+}
+
+@keyframes aparecertexto2 {
+	0% { content: ""; }
+	23% { content: "";}
+    24% { content: "a nossa"; }
+	49% { content: "a nossa"; }
+	50% { content: "ometrobh"; }
+	99% { content: "ometrobh"; }
+	100% { content: ""; }
+}
+
+.rodape-container3 {
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: left;
+	animation: aparecerfundo3 10s linear infinite;
+}
+
+@keyframes aparecerfundo3 {
+  0% { background-color: transparent; }
+  35% { background-color: transparent; }
+  36% { background-color: rgb(230,0,126); }
+  49% { background-color: rgb(230,0,126); }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100% { background-color: transparent; }
+}
+
+.rodape-coluna3-texto {
+	&:after {
+		content: "";
+		animation: aparecertexto3 10s linear infinite;
+	}
+}
+
+@keyframes aparecertexto3 {
+	0% { content: ""; }
+	35% { content: "";}
+    36% { content: "grana?"; }
+	49% { content: "grana?"; }
+	50% { content: ".com.br"; }
+	99% { content: ".com.br"; }
+	100% { content: ""; }
+}
+
+.rodape-logo {
+	height: 33vh;
+	animation: trocarfundo 10s linear infinite;
+	background: url('../img/logo-amarelo.svg');
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: rgb(255,237,0);
+}
+
+@keyframes trocarfundo {
+  0% { background-image: url('../img/logo-amarelo.svg'); background-color: rgb(255,237,0); }
+  49% { background-image: url('../img/logo-amarelo.svg'); background-color: rgb(255,237,0); }
+  50% { background-image: url('../img/logo-rosa.svg'); background-color: rgb(230,0,126); }
+  100% { background-image: url('../img/logo-rosa.svg'); background-color: rgb(230,0,126); }
 }
